@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   /*
   ** Headers of the page
   */
@@ -35,7 +35,12 @@ module.exports = {
       }
     }
   },
-
-  mode: 'spa'
+  mode: 'spa',
+  plugins: ['~/plugins/auth0.js'],
+  auth0: {
+    domain: 'si0005hp-dev1.auth0.com',
+    clientID: 'ij432Da6kzxbArLbqRPsPaB4TXOFs86Y'
+  },
 }
 
+module.exports = config
